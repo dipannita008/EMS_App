@@ -1,0 +1,18 @@
+<h3>Add Event</h3>
+<hr/>
+<form action="">
+    <div class="form-group col-sm-10">
+        <label for="">Event Name</label>       <!-- here the eventData is an obj of event class and name is the prop of the class -->
+        <input type="text" class="form-control" [(ngModel)] = "eventData.name" name="name">
+    </div>
+    <div class="form-group col-sm-10">
+        <label for="">Event Description</label>
+        <input type="text" class="form-control" [(ngModel)] = "eventData.description" name="description">
+    </div>
+    <div class="form-group col-sm-10">
+        <label for="">Event Type</label>
+        <input type="text" class="form-control" [(ngModel)] = "eventData.type" name="type">
+    </div>
+    <input type="button" (click) = "addEvent()" value="Save" class="btn btn-primary">
+    <input type="button" value="Reset" class="btn btn-secondary">
+</form>

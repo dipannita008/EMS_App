@@ -1,0 +1,25 @@
+<h3>Edit Event</h3>
+<hr/>
+<form action="">
+    <div class="form-group col-sm-10">
+        <label for="">Event Id</label>
+        <input type="text" class="form-control" [(ngModel)] ="eventData.id" name="id">
+    </div>
+    <div class="form-group col-sm-10">
+        <label for="">Event Name</label>
+        <input type="text" class="form-control" [(ngModel)] ="eventData.name" name="name">
+    </div>
+    <div class="form-group col-sm-10">
+        <label for="">Event Description</label>
+        <input type="text" class="form-control" [(ngModel)] = "eventData.description" name="description">
+    </div>
+    <div class="form-group col-sm-10">
+        <label for="">Event Type</label>
+        <input type="text" class="form-control" [(ngModel)] ="eventData.type" name="type">
+    </div>
+    <input type="button" (click) = "update()" value="Save" class="btn btn-primary">
+</form>
+<hr />
+<div>
+    <!-- <h3 *ngIf="updated">Updated!!!</h3> -->
+</div>
